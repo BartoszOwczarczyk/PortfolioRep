@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #24252A;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    line-height: 22px;
+
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 20px white;
+
+}
+
+.nav_links {
+    list-style: none;
+
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.main-container {
+    display: flex;
+
+    margin: 0 auto;
+
+    width: 80%;
+    height: 100vh;
+}
+
+.title-container {
+    margin: 150px auto 0;
+    max-width: 350px;
+    text-align: center;
+}
+
+
+
+.text-container {
+    display: flex;
+
+    margin: auto auto;
+
+    width: 25%;
+
+    letter-spacing: 0.5px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+}
+
+.jpg-container {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+
+    cursor: default;
+}
+
+.fb-jpg {
+    max-height: 50px;
+}
+
+.git-jpg {
+    max-height: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 0 25px;
+
+}
+
+
+.git-jpg:hover {
+    transform: scale(110%);
+    background-color: red;
+}
+
+.fb-jpg:hover {
+    transform: scale(110%);
+    background-color: red;
+}
+
+@media all and (max-width: 800px) {
+    .title-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .main-container2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        padding: 4% 0 3% 0;
+    }
+
+
+}
